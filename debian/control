@@ -1,15 +1,26 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-google-go-querystring
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Aloïs Micard <creekorful@debian.org>, Anthony Fok <foka@debian.org>
+Section: devel
+Testsuite: autopkgtest-pkg-go
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-google-go-cmp-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-google-go-querystring
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-google-go-querystring.git
+Homepage: https://github.com/google/go-querystring
+XS-Go-Import-Path: github.com/google/go-querystring
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-google-go-querystring-dev
+Architecture: all
+Depends: golang-github-google-go-cmp-dev, ${misc:Depends}
+Multi-Arch: foreign
+Description: library for encoding structs into URL query parameters
+ go-querystring is Go library for encoding structs into URL query
+ parameters. go-querystring is designed to assist in scenarios where
+ you want to construct a URL using a struct that represents the URL
+ query parameters.
