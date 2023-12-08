@@ -1,5 +1,82 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-google-go-querystring (1.1.0-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 14 Dec 2022 01:35:08 +0000
+
+golang-github-google-go-querystring (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Add myself to the list of Uploaders, and, together with Anthony Fok,
+    adopt the package from Alexandre Viau (Closes: #940363)
+  * d/control:
+    - Bump debhelper-compat.
+    - Bump Standards-Version.
+
+ -- Aloïs Micard <creekorful@debian.org>  Sat, 28 Aug 2021 13:47:45 +0200
+
+golang-github-google-go-querystring (1.0.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+  * Apply multi-arch hints.
+    + golang-github-google-go-querystring-dev: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 21 Aug 2021 12:37:42 +0100
+
+golang-github-google-go-querystring (1.0.0-1) unstable; urgency=medium
+
+  * New upstream version 1.0.0
+  * Add debian/watch to track upstream tarball
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Apply "cme fix dpkg" fixes:
+    - Build-Depends: 'debhelper (>= 10)' → 'debhelper-compat (= 12)
+    - Bump Standards-Version: '4.0.0' -> '4.4.1'
+  * Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Fri, 01 Nov 2019 10:00:21 -0600
+
+golang-github-google-go-querystring (0.0~git20170111.0.53e6ce1-4) unstable; urgency=medium
+
+  * Team upload.
+  * Vcs-* urls: pkg-go-team -> go-team.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 05 Feb 2018 23:50:30 -0500
+
+golang-github-google-go-querystring (0.0~git20170111.0.53e6ce1-3) unstable; urgency=medium
+
+  * point Vcs-* urls to salsa.d.o subproject
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 25 Jan 2018 16:32:21 -0500
+
+golang-github-google-go-querystring (0.0~git20170111.0.53e6ce1-2) unstable; urgency=medium
+
+  * Move to salsa.debian.org.
+  * Priority extra -> optional.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 30 Dec 2017 13:20:39 -0500
+
+golang-github-google-go-querystring (0.0~git20170111.0.53e6ce1-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 0.0~git20170111.0.53e6ce1
+  * Use debhelper v10
+  * Update to Standards-Version 4.0.0
+  * Build-Depend on golang-any
+  * Use HTTPS URL for d/copyright
+  * Remove Depends on golang-go
+  * Add Testsuite: autopkgtest-pkg-go to d/control
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Mon, 03 Jul 2017 14:07:53 +0200
+
+golang-github-google-go-querystring (0.0~git20151028.0.2a60fc2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #807958)
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 14 Dec 2015 13:41:19 -0500
